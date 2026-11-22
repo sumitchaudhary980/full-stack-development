@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Management System</h1>
+        <p>Your place to learn and explore new things.</p>
+    </header>
+
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <ul id="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <section class="content">
+            <section>
+                <h2>Welcome to Student Learning Hub</h2>
+                <p>
+                    Welcome to our learning platform. Here students can
+                    explore different subjects, access study materials,
+                    watch tutorials and improve their knowledge.
+                </p>
+            </section>
+
+            <section id="courses">
+                <h2>Available Courses</h2>
+
+                <div class="course-container">
+                    <article class="course">
+                        <figure>
+                            <img src="images/fullstack.jpg" alt="Full Stack Development">
+                            <figcaption>Programming Course</figcaption>
+                        </figure>
+                        <h3>Full Stack Development</h3>
+                        <p>Learn HTML, CSS, JS, PHP, mySQL.</p>
+                        <a href="https://www.w3schools.com/html/">Learn More</a>
+                    </article>
+
+                    <article class="course">
+                        <figure>
+                            <img src="images/oop.jpg" alt="Object Oriented Design & Programming">
+                            <figcaption>Programming Course</figcaption>
+                        </figure>
+                        <h3>Software Development</h3>
+                        <p>Learn Software Development Using Java.</p>
+                        <a href="https://www.w3schools.com/html/">Learn More</a>
+                    </article>
+
+                    <article class="course">
+                        <figure>
+                            <img src="images/ai.jpg" alt="Concept of Technologies & AI">
+                            <figcaption>Machine Learning Course</figcaption>
+                        </figure>
+                        <h3>Machine Learning</h3>
+                        <p>Learn Basic Concepts of AI and Machine Learning</p>
+                        <a href="https://www.w3schools.com/html/">Learn More</a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="resources">
+                <h2>Study Resources</h2>
+                <p>Useful resources to help students with their studies:</p>
+
+                <ul>
+                    <li><a href="https://www.w3schools.com/">Programming Tutorials</a></li>
+                    <li><a href="https://www.coursera.org/">Online Courses</a></li>
+                    <li><a href="https://www.wikipedia.org/">General Knowledge</a></li>
+                </ul>
+            </section>
+
+            <section id="media">
+                <h2>Learning Videos</h2>
+                <p>Watch this video to learn about HTML.</p>
+
+                <video controls width="100%">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Your browser does not support video.
+                </video>
+
+                <h2>Learning Audio</h2>
+                <p>Listen to this sample audio.</p>
+
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Your browser does not support audio.
+                </audio>
+            </section>
+        </section>
+
+        <aside>
+            <h2>Latest Announcements</h2>
+            <ul>
+                <li>New programming course is available.</li>
+                <li>Full Stack Development study materials updated.</li>
+                <li>New learning videos uploaded.</li>
+            </ul>
+
+            <h2>Study Tips</h2>
+            <ul>
+                <li>Make a daily study schedule.</li>
+                <li>Take regular breaks.</li>
+                <li>Practice what you learn.</li>
+                <li>Revise your notes regularly.</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2026 Learning Management System. All rights reserved.</p>
+        <p>Email: lms@example.com</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
